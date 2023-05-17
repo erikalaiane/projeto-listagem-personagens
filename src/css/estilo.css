@@ -1,0 +1,127 @@
+body{
+    font-family: "Poppins", sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #8a6f76;
+    color: #161616;
+}
+
+body.modo-escuro{
+    background-color: rgb(27, 9, 27);
+    color: #ffffff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+header .logo,
+header .imagem-botao,
+header .logomeio{
+    width: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover, 
+header .imagem-botao:hover,
+header .logomeio:hover,
+main .cartao-personagem:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagemrpg{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-personagem{
+    background-color: #b3a1b2;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .modo-escuro .cartao-personagem{
+    background-color: #5e4764;
+}
+
+.modo-escuro .cartao-personagem {
+    background-color: #5e4764;
+}
+
+main .cartao-personagem .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #222121;
+    border-radius: 10px;
+}
+
+main .cartao-personagem .informacoes spam{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-personagem .gif{
+    width: 100px;
+    height: 100px;
+}
+
+main .cartao-personagem .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-personagem .tipos{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+.feiticeiro{
+    background-color: #c5601d;
+    border-radius: 5px;
+}
+
+.guardiao{
+    background-color: #006572;
+    border-radius: 5px;
+}
+
+.espadachim{
+    background-color: #a13965;
+    border-radius: 5px;
+}
+
+.protetor{
+    background-color: #32964b;
+    border-radius: 5px;
+}
+
+
+main .descricao{
+    max-height: 90px;
+    overflow-y: scroll;
+    font-size: 12px;
+    padding-right: 10px;
+}
